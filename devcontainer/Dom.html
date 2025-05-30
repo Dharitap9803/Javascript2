@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+<body>
+    <div id="parent">
+        <p>Child 1</p>
+        <p>Child 2</p>
+        <p>Child 3</p>
+    </div>
+
+    <script>
+        const parent = document.getElementById("parent");
+        parent.children[1].style.color = "orange";
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+    </script>
+</body>
+</html>
